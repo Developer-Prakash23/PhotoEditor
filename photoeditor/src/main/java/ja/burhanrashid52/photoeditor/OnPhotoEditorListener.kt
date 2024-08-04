@@ -32,7 +32,7 @@ interface OnPhotoEditorListener {
      * @param numberOfAddedViews number of views currently added
      * @see ViewType
      */
-    fun onAddViewListener(viewType: ViewType, numberOfAddedViews: Int)
+    fun onAddViewListener(viewType: ViewType, rootView: View numberOfAddedViews: Int)
 
     /**
      * This is a callback when user remove any view on the [PhotoEditorView] it happens when usually
