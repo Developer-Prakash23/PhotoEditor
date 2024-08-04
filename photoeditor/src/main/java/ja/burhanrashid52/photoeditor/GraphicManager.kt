@@ -34,6 +34,7 @@ internal class GraphicManager(
 
         onPhotoEditorListener?.onAddViewListener(
             graphic.viewType,
+            view,
             mViewState.addedViewsCount
         )
     }
@@ -46,6 +47,7 @@ internal class GraphicManager(
             mViewState.pushRedoView(view)
             onPhotoEditorListener?.onRemoveViewListener(
                 graphic.viewType,
+                view,
                 mViewState.addedViewsCount
             )
         }
