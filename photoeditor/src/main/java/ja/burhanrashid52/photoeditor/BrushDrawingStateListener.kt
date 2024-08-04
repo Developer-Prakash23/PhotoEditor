@@ -21,6 +21,7 @@ class BrushDrawingStateListener internal constructor(
         mViewState.addAddedView(drawingView)
         mOnPhotoEditorListener?.onAddViewListener(
             ViewType.BRUSH_DRAWING,
+            null,
             mViewState.addedViewsCount
         )
     }
